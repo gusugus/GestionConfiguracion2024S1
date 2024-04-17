@@ -16,4 +16,5 @@ PASOS de Instalacion
 * CADA DESARROLLADOR CREARA UNA RAMA Y TRABAJARA SOBRE ELLA.
     1. Primero se clonara l proyecto (con visual studio)
     2. Creara su rama a partir de la rama main
+    3. Hara sus cambios y subira los cambios a una rama creada (NO A LA MAIN)
 * LA RAMA MAIN SERA LA RAMA PRINCIPAL
