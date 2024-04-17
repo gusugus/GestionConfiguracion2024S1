@@ -17,4 +17,5 @@ PASOS de Instalacion
     1. Primero se clonara l proyecto (con visual studio)
     2. Creara su rama a partir de la rama main
     3. Hara sus cambios y subira los cambios a una rama creada (NO A LA MAIN)
+    4. tst3
 * LA RAMA MAIN SERA LA RAMA PRINCIPAL
