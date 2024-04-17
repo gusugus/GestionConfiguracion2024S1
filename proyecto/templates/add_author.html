@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Autor</title>
+</head>
+<body>
+    <h1>Agregar Autor</h1>
+    <form method="post" action="/add_author">
+        {{ form.csrf_token }}
+        <label for="author_name">Nombre del Autor:</label><br>
+        <input type="text" id="author_name" name="author_name"><br><br>
+        <input type="submit" value="Agregar Autor">
+    </form>
+</body>
+</html>

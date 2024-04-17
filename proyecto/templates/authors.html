@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors and Books</title>
+</head>
+<body>
+    <h1>Authors and Books</h1>
+    <a href="/add_author">Agregar Autor</a> <!-- Enlace para agregar autores -->
+    <a href="{{ url_for('add_book') }}">Add New Book</a> <!-- Enlace para agregar un nuevo libro -->
+
+    <ul>
+        {% for author in authors %}
+            <li>{{ author.name }} <a href="/delete_author/{{ author.id }}">X</a></li> <!-- Enlace para borrar el autor -->
+            <ul>
+                {% for book in author.books %}
+                    <li>{{ book.title }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </ul>
+</body>
+</html>
