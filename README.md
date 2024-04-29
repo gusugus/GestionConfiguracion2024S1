@@ -7,4 +7,5 @@ Prroyecto para la materia de Gestion de Configuracion de Software Seccion Noctur
     2. Creara su rama a partir de la rama main
     3. Hara sus cambios y subira los cambios a una rama creada (NO A LA MAIN)
     
-* LA RAMA MAIN SERA LA RAMA PRINCIPAL y no sera modificada sino por una solicitud de Pull Request
+* LA RAMA MAIN SERA LA RAMA PRINCIPAL y no será modificada sino por una solicitud de Pull Request
+* El desarrollador será el encargado de crear el pull request y verificar posibles CONFLICTOS y resolverlos
