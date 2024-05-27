@@ -4,12 +4,12 @@ from models import Base, Author, Book
 from database import db
 from forms import AuthorForm, BookForm
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # Configuración de la clave secreta para la protección CSRF
 app.config['SECRET_KEY'] = 'tu_clave_secreta_aqui'
 
-# Configura la base de datos
+# Configura la base de datos 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
