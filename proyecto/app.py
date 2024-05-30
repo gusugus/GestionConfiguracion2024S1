@@ -32,11 +32,20 @@ def add_author():
 
     return render_template('add_author.html', form=form)
 
-# Ruta para mostrar todos los autores
+
+@app.route('/pages/Restaurants.html')
+def show_index():
+    return render_template('/pages/Restaurants.html')
+
 @app.route('/')
-def show_authors():
-    authors = Author.query.all()
-    return render_template('authors.html', authors=authors)
+def show_index2():
+    return render_template('/pages/Restaurants.html')
+
+
+@app.route('/pages/Recetas.html')
+def show_recetas(): 
+    return render_template('/pages/Recetas.html')
+
 
 # Define la ruta para borrar un autor
 @app.route('/delete_author/<int:author_id>', methods=['GET'])
