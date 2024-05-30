@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tailwind Test3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          .img1 , .img2{
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:1cm;
+          }
+        </style>
+    </head>
+    <body>
+      <nav class="bg-gradient-to-r from-cyan-900 to-blue-400">
+        <div class="flex flex-wrap justify-between p-4">
+          <a href="#" class="flex items-center space-x-3 ">
+          </a>
+          <!--  -->
+          <div class="md:block" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4  mt-4 md:space-x-8  md:flex-row border-0 dark:bg-transparent ">
+              <li>
+                <a href="../src/index.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Mi Cocina</a>
+      
+              </li>
+      
+              <li>
+                <a href="../pages/Hgastro.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Historia Gastronomica</a>
+              </li>
+              <li>
+                <a href="../pages/Restaurants.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Restaurantes</a>
+              </li>
+              <li>
+                <a href="../pages/Recetas.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Recetas de Cocina</a>
+              </li>
+              <li>
+                <a href="../pages/ResAlimentaria.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Reseña Alimentaria</a>
+              </li>
+              <li>
+                <a href="../pages/platostipicos.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Platos Tipicos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-center">
+        <table class="table w-full m-10">
+            <thead>
+                <tr>
+                    <th class="border border-blue-300 px-4 py-4 text-amber-600 w-1/5">Platillo</th>
+    
+                    <th class="border border-blue-300 px-4 py-4 text-amber-600 w-1/5">Ingredientes</th>
+                    <th class="border border-blue-300 px-4 py-4 text-amber-600 w-1/2">Foto</th>
+                </tr>
+    
+            </thead>
+            <tbody>
+                <tr class="bg-blue-100">
+                    <td class="border border-blue-300 px-4 py-4">Pavo en Salsa de Champiñones</td>
+                    <td class="border border-blue-300 px-4 py-4"> Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías 
+                      o de borradores de diseño para probar el diseño visual</td>
+                    <td class="border border-blue-300 px-4 py-4">  <img class="img1" src="{{ url_for('static', filename='images/pavo.jpg') }}"> </td>
+                </tr>
+                <tr>
+                    <td class="border border-blue-300 px-4 py-4"> Filete Mignion </td>
+                    <td class="border border-blue-300 px-4 py-4"> Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías 
+                      o de borradores de diseño para probar el diseño visual</td>
+                    <td class="border border-blue-300 px-4 py-4"> <img class="img2"src="{{ url_for('static', filename='images/filete.avif') }}" ></td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>

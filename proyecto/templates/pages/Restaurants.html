@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tailwind Test3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+      <nav class="bg-gradient-to-r from-cyan-900 to-blue-400">
+        <div class="flex flex-wrap justify-between p-4">
+          <a href="#" class="flex items-center space-x-3 ">
+          </a>
+          <!--  -->
+          <div class="md:block" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4  mt-4 md:space-x-8  md:flex-row border-0 dark:bg-transparent ">
+              <li>
+                <a href="../src/index.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Mi Cocina</a>
+      
+              </li>
+      
+              <li>
+                <a href="../pages/Hgastro.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Historia Gastronomica</a>
+              </li>
+              <li>
+                <a href="../pages/Restaurants.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Restaurantes</a>
+              </li>
+              <li>
+                <a href="../pages/Recetas.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Recetas de Cocina</a>
+              </li>
+              <li>
+                <a href="../pages/ResAlimentaria.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Reseña Alimentaria</a>
+              </li>
+              <li>
+                <a href="../pages/platostipicos.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Platos Tipicos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-center">
+        <table class="table w-full m-10">
+            <thead>
+                <tr>
+                    <th class="border border-blue-300 px-4 py-4 text-amber-600 w-1/5">Restaurant</th>
+    
+                    <th class="border border-blue-300 px-4 py-4 text-amber-600 w-1/5">Pais</th>
+                    <th class="border border-blue-300 px-4 py-4 text-amber-600 w-1/2">Descripcion</th>
+                </tr>
+    
+            </thead>
+            <tbody>
+                <tr class="bg-blue-100">
+                    <td class="border border-blue-300 px-4 py-4">Mirazur</td>
+                    <td class="border border-blue-300 px-4 py-4">Francia</td>
+                    <td class="border border-blue-300 px-4 py-4"> Pese a que la cocina francesa no está en su mejor momento, Mirazur y su chef italo-argentino lograron 
+                      colocarse como uno de los mejores del mundo. </td>
+                </tr>
+                <tr>
+                    <td class="border border-blue-300 px-4 py-4">Nuevo Noma</td>
+                    <td class="border border-blue-300 px-4 py-4">Dinamarca</td>
+                    <td class="border border-blue-300 px-4 py-4">La última vez que Nuevo Noma fue reconocido entre los mejores restaurantes del mundo fue en 2014. Sin embargo, su chef reabrió las puerta de Noma con un nuevo
+                       concepto: la gastronomía nórdica.</td>
+                </tr>
+                <tr class="bg-blue-100">
+                    <td class="border border-blue-300 px-4 py-4">Asador Etxebarri</td>
+                    <td class="border border-blue-300 px-4 py-4">España</td>
+                    <td class="border border-blue-300 px-4 py-4">Este modesto Asador Etxebarri de origen vasco logró colocarse entre los mejores restaurantes del mundo gracias a que, literalmente, pasan 
+                      todos los ingredientes de sus platillos por la parrilla.</td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+
+    </body>
+</html>
