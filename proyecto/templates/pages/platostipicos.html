@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tailwind Test3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          .foto{
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:1cm;
+          }
+        </style>
+    </head>
+    <body>
+      <nav class="bg-gradient-to-r from-cyan-900 to-blue-400">
+        <div class="flex flex-wrap justify-between p-4">
+          <a href="#" class="flex items-center space-x-3 ">
+          </a>
+          <!--  -->
+          <div class="md:block" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4  mt-4 md:space-x-8  md:flex-row border-0 dark:bg-transparent ">
+              <li>
+                <a href="../src/index.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Mi Cocina</a>
+      
+              </li>
+      
+              <li>
+                <a href="../pages/Hgastro.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Historia Gastronomica</a>
+              </li>
+              <li>
+                <a href="../pages/Restaurants.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Restaurantes</a>
+              </li>
+              <li>
+                <a href="../pages/Recetas.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Recetas de Cocina</a>
+              </li>
+              <li>
+                <a href="../pages/ResAlimentaria.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Reseña Alimentaria</a>
+              </li>
+              <li>
+                <a href="../pages/platostipicos.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Platos Tipicos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="ptipicos">
+        <h1 class="intro font-normal"> Uno de los mejores platos tipicos que representan a nuestro es pais es:</h1>
+        <h2 class="title text-center font-black"> El Ceviche de Camarón </h2>
+        <p class="ceviche text-justify font-normal p-4">
+          <img class="foto" src="{{ url_for('static', filename='images/ceviche.jpg') }}">
+          El ceviche de camarón o cebiche es uno de los platos más tradicionales del Ecuador, especialmente en la costa del país. Aunque el ceviche de camarón es muy popular ya que en Ecuador el camarón es de la más alta calidad, también son 
+          famosos los ceviches de caracol, pescado y otros mariscos. 
+        </p>
+      </div>
+
+    </body>
+    <div>
+      <footer>
+        <p class="diseño text-center bg-gradient-to-r from-red-900 to-yellow-300 "> Gracias a estas Practicas eh aprendido un 
+          poco mas sobre tailwind Css</p>
+      </footer>
+    </div>
+    
+</html>
