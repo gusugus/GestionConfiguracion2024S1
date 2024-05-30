@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tailwind Test3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          .salud{
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:1cm;
+          }
+          .cocina{
+            padding:3px;
+            border-radius: 2cm;;
+          }
+        </style>
+    </head>
+    <body>
+      <nav class="bg-gradient-to-r from-cyan-900 to-blue-400">
+        <div class="flex flex-wrap justify-between p-4">
+          <a href="#" class="flex items-center space-x-3 ">
+          </a>
+          <!--  -->
+          <div class="md:block" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4  mt-4 md:space-x-8  md:flex-row border-0 dark:bg-transparent ">
+              <li>
+                <a href="../src/index.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Mi Cocina</a>
+      
+              </li>
+      
+              <li>
+                <a href="../pages/Hgastro.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Historia Gastronomica</a>
+              </li>
+              <li>
+                <a href="../pages/Restaurants.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Restaurantes</a>
+              </li>
+              <li>
+                <a href="../pages/Recetas.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Recetas de Cocina</a>
+              </li>
+              <li>
+                <a href="../pages/ResAlimentaria.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Reseña Alimentaria</a>
+              </li>
+              <li>
+                <a href="../pages/platostipicos.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Platos Tipicos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="cocina bg-gradient-to-l from-amber-900 to-amber-200 ">
+        <h1 class="text-center font-black p-6"> Cocina Saludable</h1>
+      </div>
+      <div class="text-center p-6">
+        <p>Llevar una dieta saludable tiene muchos beneficios. La alimentación no sirve sólo como tratamiento sino también como prevención. Llevar un estilo de vida saludable reduce las probabilidades de padecer enfermedades en el futuro tales como la Diabetes Mellitus, hipertensión, enfermedades cardiovasculares y del 
+          sistema digestivo, anemia, dislipemias y algunos tipos de cáncer.</p>
+      </div>
+      <div class="max-w-md p-2 mx-auto mt-2 bg-red-200 sm:shadow-md sm::rounded-md sm:bg-red-100 sm:p-6 md:bg-amber-100 rounded-xl" >
+        <h2 class="text-lg font-semibold text-center text-green-600 sm:text-xl"> Consejo Saludable:</h2>
+        <p class="mt-3 text-gray-800">“Cuando la alimentación es mala, la medicina no funciona. Cuando la alimentación es buena,
+           la medicina no es necesaria”.
+        </p>
+      </div>
+      <div>
+        <img class="salud" src= "{{ url_for('static', filename='images/cocinasalu.jpg') }}">
+       
+      </div>
+
+    </body>
+</html>
