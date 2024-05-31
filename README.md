@@ -8,9 +8,3 @@ Prroyecto para la materia de Gestion de Configuracion de Software Seccion Noctur
     3. Hara sus cambios y subira los cambios a una rama creada (NO A LA MAIN)
     
 * LA RAMA MAIN SERA LA RAMA PRINCIPAL y no sera modificada sino por una solicitud de Pull Request
-
-* Heello World
-2
-3
-4
-5
