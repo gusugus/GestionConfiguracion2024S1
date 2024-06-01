@@ -57,6 +57,16 @@ def show_ResAlimentaria():
 def show_platostipicos():
     return render_template('/pages/platostipicos.html')
 
+
+@app.route('/src/index.html')
+def show_index3(): 
+    return render_template('/pages/index.html')
+
+@app.route('/pages/Hgastro.html')
+def show_hgastro(): 
+    return render_template('/pages/Hgastro.html')
+
+
 # Define la ruta para borrar un autor
 @app.route('/delete_author/<int:author_id>', methods=['GET'])
 def delete_author(author_id):
