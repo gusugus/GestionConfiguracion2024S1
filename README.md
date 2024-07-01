@@ -62,5 +62,5 @@ En la parte izquierda de la pagina, debemos ponerle un titulo y una descripcion 
 ![imagen](https://github.com/gusugus/GestionConfiguracion2024S1/assets/5783772/13c7f0a0-a111-40ac-aa7b-c2a83f2f1796)
 
 9. Observamos que el PR esta merged y que los cambios estan en la rama Principal (main)
-10. 
+
 ![imagen](https://github.com/gusugus/GestionConfiguracion2024S1/assets/5783772/c0459090-0fed-4096-bd86-68a76457c80d)
