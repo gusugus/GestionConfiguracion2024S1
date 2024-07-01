@@ -1,4 +1,3 @@
-![imagen](https://github.com/gusugus/GestionConfiguracion2024S1/assets/5783772/f5bc87fe-9efd-460d-89bd-8dd42c34ba50)Pasos para subir cambios a Github:
 
 1. Hacer cambios al proyecto, y crear una rama para poder guardarlos.
     Para crear una rama, debemos usar el comando:
