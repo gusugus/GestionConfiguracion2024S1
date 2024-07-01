@@ -4,12 +4,12 @@ from models import Base, Author, Book
 from database import db
 from forms import AuthorForm, BookForm
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # Configuración de la clave secreta para la protección CSRF
 app.config['SECRET_KEY'] = 'tu_clave_secreta_aqui'
 
-# Configura la base de datos
+# Configura la base de datos 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
@@ -32,11 +32,40 @@ def add_author():
 
     return render_template('add_author.html', form=form)
 
-# Ruta para mostrar todos los autores
+
+@app.route('/pages/Restaurants.html')
+def show_index():
+    return render_template('/pages/Restaurants.html')
+
 @app.route('/')
-def show_authors():
-    authors = Author.query.all()
-    return render_template('authors.html', authors=authors)
+def show_index2():
+    return render_template('/pages/Restaurants.html')
+
+
+@app.route('/pages/Recetas.html')
+def show_recetas(): 
+    return render_template('/pages/Recetas.html')
+
+
+
+@app.route('/pages/ResAlimentaria.html')
+def show_ResAlimentaria():
+    return render_template('/pages/ResAlimentaria.html')
+
+
+@app.route('/pages/platostipicos.html')
+def show_platostipicos():
+    return render_template('/pages/platostipicos.html')
+
+
+@app.route('/src/index.html')
+def show_index3(): 
+    return render_template('/pages/index.html')
+
+@app.route('/pages/Hgastro.html')
+def show_hgastro(): 
+    return render_template('/pages/Hgastro.html')
+
 
 # Define la ruta para borrar un autor
 @app.route('/delete_author/<int:author_id>', methods=['GET'])

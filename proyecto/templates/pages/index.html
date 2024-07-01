@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tailwind Test3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          .tailwind{
+              height: 300px;
+              width: 350px;
+              padding: 10px;
+              margin-left: auto;
+              margin-right: auto;
+              
+          }
+      </style>
+    </head>
+<nav class="bg-gradient-to-r from-cyan-900 to-blue-400">
+  <div class="flex flex-wrap justify-between p-4">
+    <a href="#" class="flex items-center space-x-3 ">
+    </a>
+    <!--  -->
+    <div class="md:block" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4  mt-4 md:space-x-8  md:flex-row border-0 dark:bg-transparent ">
+        <li>
+          <a href="../src/index.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Mi Cocina</a>
+
+        </li>
+
+        <li>
+          <a href="../pages/Hgastro.html" class="block py-2 px-3 p-0 text-white md:text-blue-700 " aria-flowto="page">Historia Gastronomica</a>
+        </li>
+        <li>
+          <a href="../pages/Restaurants.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Restaurantes</a>
+        </li>
+        <li>
+          <a href="../pages/Recetas.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Recetas de Cocina</a>
+        </li>
+        <li>
+          <a href="../pages/ResAlimentaria.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Reseña Alimentaria</a>
+        </li>
+        <li>
+          <a href="../pages/platostipicos.html" class="block py-2 px-3   border-0 hover:text-blue-700 p-0 text-white ">Platos Tipicos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 class="text-center p-2 font-bold">Bienvenido al Test 3</h1>
+<body class="bg-gradient-to-r from-amber-600 to-amber-200">
+  <div class="max-w-md p-4 mx-auto mt-4 bg-gray-200 sm:shadow-md sm::rounded-md sm:bg-gray-100 sm:p-6 md:bg-green-100 rounded-xl" >
+    <h2 class="text-lg font-semibold text-center text-blue-500 sm:text-xl"> En que consiste este Test?</h2>
+    <p class="mt-3 text-gray-600">Este test conciste en demostrar lo que hemos aprendido durante el tiempo
+        que hemos planteado nuestro proyecto.
+        Para este proyecto yo Homar Gabriel Aguirre Iñiguez e utilizado
+        el framework "Tailwind CSS" junto con "NodeJS".
+    </p>
+  </div>
+  <div class="tailwind">
+    
+    <img src="{{ url_for('static', filename='images/tailwind.png') }}">
+  </div>
+
+    </body>
+</html>
